@@ -1,1 +1,3 @@
-# ProjectEuler
+# Coding Puzzles
+* Project Euler
+* HackerRank
