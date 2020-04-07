@@ -11,6 +11,7 @@ struct ListNode {
  * Output: 7 -> 0 -> 8
  * Explanation: 342 + 465 = 807.
  */
+// My algorithm is O(N)
 struct ListNode* addTwoNumbers(struct ListNode* l1, struct ListNode* l2) {
     if (l1 == NULL && l2 == NULL)
         return NULL;

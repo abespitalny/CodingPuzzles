@@ -3,6 +3,7 @@ Input: "pwwkew"
 Output: 3
 Explanation: The answer is "wke", with the length of 3.
 '''
+# My algorithm is O(N)
 def lengthOfLongestSubstring(s: str) -> int:
     hash_table = {}
     start = 0

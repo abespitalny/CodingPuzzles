@@ -1,6 +1,6 @@
 from typing import List
 
-# Assuming nums has at least one element.
+# Assuming nums has at least one element. This algorithm runs in O(n).
 def max_subarray(nums: List[int]) -> int:
     max_net = net = 0
     max_num = nums[0]
@@ -26,7 +26,7 @@ def max_subarray_v2(nums: List[int]) -> int:
             max_net = net
     return max_net
 
-# A divide & conquer solution is a good exercise (note: I looked it up since the problem was taking too long).
+# A divide & conquer solution is a good exercise (note: I looked it up since the problem was taking too long). It's in O(n*log(n)) time.
 
 print(max_subarray([-2, 1, -3, 4, -1, 2, 1, -5, 4]))
 print(max_subarray([-1]))
