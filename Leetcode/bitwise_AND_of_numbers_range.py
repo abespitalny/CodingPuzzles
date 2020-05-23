@@ -1,7 +1,7 @@
 '''
 Given a range [m, n] where 0 <= m <= n <= 2147483647, return the bitwise AND of all numbers in this range, inclusive.
 '''
-import math
+from leetcode import *
 
 # Time: O(log(n)) where n is the number of bits since we have to shift log base 2 of n, Space: O(1).
 def range_bitwise_and(m: int, n: int) -> int:

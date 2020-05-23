@@ -11,7 +11,7 @@ Follow up:
 Could you solve it with constant space complexity?
 (The output array does not count as extra space for the purpose of space complexity analysis.)
 '''
-from typing import List
+from leetcode import *
 
 # This solution runs in O(n) time and uses O(1) space without performing division.
 def product_except_self(nums: List[int]) -> List[int]:

@@ -5,7 +5,7 @@ Find two lines, which together with x-axis forms a container, such that the cont
 
 Note: You may not slant the container and n is at least 2.
 '''
-from typing import List
+from leetcode import *
 
 # Time: O(n), Space: O(1)
 def max_area(height: List[int]) -> int:

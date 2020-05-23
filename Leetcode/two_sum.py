@@ -1,7 +1,7 @@
 '''
 Given an array of integers, return indices of the two numbers such that they add up to a specific target.
 '''
-from typing import List
+from leetcode import *
 
 def two_sum(nums: List[int], target: int) -> List[int]:
     hash_table = {}

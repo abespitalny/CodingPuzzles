@@ -1,7 +1,7 @@
 '''
 Given a binary array, find the maximum length of a contiguous subarray with equal number of 0 and 1.
 '''
-from typing import List
+from leetcode import *
 
 # Time: O(n), Space: O(n)
 def find_max_length(nums: List[int]) -> int:

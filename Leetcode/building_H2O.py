@@ -8,12 +8,12 @@ Constraints:
 - Total number of H will be 2n in the input string.
 - Total number of O will be n in the input string.
 '''
-from threading import Lock, Thread
+from leetcode import *
 
 class H2O:
     def __init__(self):
-        self.hlock = Lock()
-        self.olock = Lock()
+        self.hlock = threading.Lock()
+        self.olock = threading.Lock()
         self.h1 = True
         self.hlock.acquire()
 
@@ -47,8 +47,8 @@ molecules = 'OHOHOHOHHHHH'
 h20 = H2O()
 for m in molecules:
     if m == 'H':
-        Thread(target=h20.hydrogen, args=(releaseHydrogen,)).start()
+        threading.Thread(target=h20.hydrogen, args=(releaseHydrogen,)).start()
     else:
-        Thread(target=h20.oxygen, args=(releaseOxygen,)).start()
+        threading.Thread(target=h20.oxygen, args=(releaseOxygen,)).start()
 
 # There was a bunch of other really smart solutions on LeetCode using semaphores, barriers, etc.

@@ -3,7 +3,7 @@ Given an array of non-negative integers, you are initially positioned at the fir
 Each element in the array represents your *maximum* jump length at that position.
 Determine if you are able to reach the last index.
 '''
-from typing import List
+from leetcode import *
 
 # Time: O(n), Space: O(1).
 def can_jump(nums: List[int]) -> bool:

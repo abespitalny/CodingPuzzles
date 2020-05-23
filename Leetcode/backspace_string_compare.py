@@ -2,7 +2,7 @@
 Given two strings S and T, return if they are equal when both are typed into empty text editors.
 # means a backspace character.
 '''
-from typing import List
+from leetcode import *
 
 def final_str(s: str) -> List[str]:
     final_s = []

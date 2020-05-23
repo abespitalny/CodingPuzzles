@@ -1,4 +1,4 @@
-from typing import List
+from leetcode import *
 
 # This is an O(n) algorithm.
 def count_elements(arr: List[int]) -> int:

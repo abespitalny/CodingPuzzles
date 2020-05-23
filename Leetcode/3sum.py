@@ -2,7 +2,7 @@
 Given an array nums of n integers, are there elements a, b, c in nums such that a + b + c = 0?
 Find all unique triplets in the array which gives the sum of zero.
 '''
-from typing import List, Tuple, Set
+from leetcode import *
 
 def all_two_sums(nums: List[int], target: int) -> Set[Tuple[int, int]]:
     two_sums = set()

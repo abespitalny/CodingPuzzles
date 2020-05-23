@@ -5,7 +5,7 @@ The philosophers are assumed to be thinking as long as they are not asking to ea
 will simultaneously use one object of your class to simulate the process.
 The function may be called for the same philosopher more than once, even before the last call ends.
 '''
-import threading
+from leetcode import *
 
 class DiningPhilosophers:
     def __init__(self):

@@ -1,4 +1,4 @@
-from typing import List
+from leetcode import *
 
 # Assume prices is a non-empty list.
 def max_profit(prices: List[int]) -> int:

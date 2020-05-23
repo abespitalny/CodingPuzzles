@@ -5,7 +5,7 @@ Output: "firstsecondthird"
 Explanation: The input [1,3,2] means thread A calls first(), thread B calls third(),
 and thread C calls second(). "firstsecondthird" is the correct output.
 '''
-import threading
+from leetcode import *
 
 class Foo:
     def __init__(self):

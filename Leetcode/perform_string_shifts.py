@@ -7,7 +7,7 @@ You are given a string s containing lowercase English letters, and a matrix shif
 
 Return the final string after all operations.
 '''
-from typing import List
+from leetcode import *
 
 # Time: O(|s| + |shift|) (i.e., it's linear)
 def string_shift(s: str, shift: List[List[int]]) -> str:

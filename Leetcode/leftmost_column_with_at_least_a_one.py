@@ -10,7 +10,7 @@ You can't access the Binary Matrix directly. You may only access the matrix usin
 Submissions making more than 1000 calls to BinaryMatrix.get will be judged Wrong Answer.
 Also, any solutions that attempt to circumvent the judge will result in disqualification.
 '''
-from typing import List
+from leetcode import *
 
 # This is for testing purposes only!!
 class BinaryMatrix:

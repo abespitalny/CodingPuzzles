@@ -7,7 +7,7 @@ To be clear, two rectangles that only touch at the corner or edges do not overla
 
 Given two (axis-aligned) rectangles, return whether they overlap.
 '''
-from typing import List
+from leetcode import *
 
 # Time: O(1), Space: O(1).
 def is_rectangle_overlap(rec1: List[int], rec2: List[int]) -> bool:

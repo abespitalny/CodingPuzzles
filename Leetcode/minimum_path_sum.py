@@ -4,7 +4,7 @@ which minimizes the sum of all numbers along its path.
 
 Note: You can only move either down or right at any point in time.
 '''
-from typing import List
+from leetcode import *
 
 # This is an O(m*n) time and O(1) space solution which I think is the best one could do.
 def min_path_sum(grid: List[List[int]]) -> int:

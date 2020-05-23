@@ -2,12 +2,7 @@
 Given a non-empty, singly linked list with head node head, return a middle node of linked list.
 If there are two middle nodes, return the second middle node.
 '''
-
-# Definition for singly-linked list:
-class ListNode:
-    def __init__(self, x):
-        self.val = x
-        self.next = None
+from leetcode import *
 
 # O(n) algorithm:
 def middle_node(head: ListNode) -> ListNode:
@@ -36,22 +31,9 @@ def middle_node(head: ListNode) -> ListNode:
 #         fast_ptr = fastPtr.next.next
 #     return slow_ptr
 
-arr = [1, 2, 3, 4, 5]
-head = ListNode(1)
-ptr = head
-for i in range(1, len(arr)):
-    ptr.next = ListNode(arr[i])
-    ptr = ptr.next
 
-middle = middle_node(head)
+middle = middle_node(construct_linked_list_array([1, 2, 3, 4, 5]))
 print(f"val: {middle.val}, next: {middle.next}")
 
-arr = [1, 2, 3, 4, 5, 6]
-head = ListNode(1)
-ptr = head
-for i in range(1, len(arr)):
-    ptr.next = ListNode(arr[i])
-    ptr = ptr.next
-
-middle = middle_node(head)
+middle = middle_node(construct_linked_list_array([1, 2, 3, 4, 5, 6]))
 print(f"val: {middle.val}, next: {middle.next}")

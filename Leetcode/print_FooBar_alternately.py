@@ -1,4 +1,4 @@
-import threading
+from leetcode import *
 
 class FooBar:
     def __init__(self, n):

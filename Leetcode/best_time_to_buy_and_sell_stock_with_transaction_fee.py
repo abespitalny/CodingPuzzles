@@ -4,7 +4,7 @@ You may not buy more than 1 share of a stock at a time (ie. you must sell the st
 
 Return the maximum profit you can make.
 '''
-from typing import List
+from leetcode import *
 
 # Time: O(n), Space: O(1).
 def max_profit(prices: List[int], fee: int) -> int:

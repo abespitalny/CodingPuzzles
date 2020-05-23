@@ -4,11 +4,7 @@ The diameter of a binary tree is the length of the longest path between any two 
 This path may or may not pass through the root.
 Note: The length of path between two nodes is represented by the number of edges between them.
 '''
-class TreeNode:
-    def __init__(self, x):
-        self.val = x
-        self.left = None
-        self.right = None
+from leetcode import *
 
 # This is an O(V + E) algorithm, that is linear time in the number of nodes and edges.
 def diameter_of_binary_tree(root: TreeNode) -> int:
@@ -44,9 +40,5 @@ def diameter_of_binary_tree(root: TreeNode) -> int:
         root.val = max(left_path, right_path)
     return diameter
 
-root = TreeNode(1)
-root.left = TreeNode(2)
-root.right = TreeNode(3)
-root.left.left = TreeNode(4)
-root.left.right = TreeNode(5)
-print(diameter_of_binary_tree(root))
+
+print(diameter_of_binary_tree(construct_bin_tree_bfs_array([1, 2, 3, 4, 5])))

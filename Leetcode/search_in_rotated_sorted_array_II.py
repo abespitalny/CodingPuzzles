@@ -7,7 +7,7 @@ Follow up:
 - This is a follow up problem to Search in Rotated Sorted Array, where nums may contain duplicates.
 - Would this affect the run-time complexity? How and why?
 '''
-from typing import List
+from leetcode import *
 
 # This is an O(n) solution since you cannot have an O(log(n)) one if duplicates are allowed.
 def search(nums: List[int], target: int) -> bool:

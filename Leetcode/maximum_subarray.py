@@ -1,4 +1,4 @@
-from typing import List
+from leetcode import *
 
 # Assuming nums has at least one element. This algorithm runs in O(n).
 def max_subarray(nums: List[int]) -> int:

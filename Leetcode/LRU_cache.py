@@ -1,4 +1,4 @@
-from typing import Any
+from leetcode import *
 
 class Node:
     def __init__(self, val: Any):

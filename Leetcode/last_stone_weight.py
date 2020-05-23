@@ -7,7 +7,7 @@ Suppose the stones have weights x and y with x <= y.  The result of this smash i
 
 At the end, there is at most 1 stone left.  Return the weight of this stone (or 0 if there are no stones left.)
 '''
-from typing import List
+from leetcode import *
 
 def insert_binary_search(arr: List[int], new_val: int) -> None:
     start = 0

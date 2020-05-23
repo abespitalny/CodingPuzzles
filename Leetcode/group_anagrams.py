@@ -1,4 +1,4 @@
-from typing import List
+from leetcode import *
 
 # This algroithm runs in O(n * k * log(k)) where k is the longest string in the array.
 def group_anagrams(strs: List[str]) -> List[List[str]]:

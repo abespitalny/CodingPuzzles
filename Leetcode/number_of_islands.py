@@ -12,7 +12,7 @@ Input:
 
 Output: 3
 '''
-from typing import List
+from leetcode import *
 
 # This is an O(m*n) time,  where m is the number of rows and n is the number of columns in the grid, and an O(m*n) space solution.
 def num_islands(grid: List[List[str]]) -> int:

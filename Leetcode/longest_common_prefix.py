@@ -2,7 +2,7 @@
 Write a function to find the longest common prefix string amongst an array of strings.
 If there is no common prefix, return an empty string "".
 '''
-from typing import List
+from leetcode import *
 
 # Time: O(n * |s_min|) where |s_min| is the length of the shortest string in the array, Space: O(n * |s_min|) because
 # you could keep taking the substring of the prefix.

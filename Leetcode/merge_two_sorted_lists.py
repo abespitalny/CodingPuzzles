@@ -2,10 +2,7 @@
 Merge two sorted linked lists and return it as a new list.
 The new list should be made by splicing together the nodes of the first two lists.
 '''
-class ListNode:
-    def __init__(self, val=0, next=None):
-        self.val = val
-        self.next = next
+from leetcode import *
 
 # Time: O(|l1| + |l2|), and Space: O(1) since we are reusing the nodes.
 def merge_two_lists(l1: ListNode, l2: ListNode) -> ListNode:

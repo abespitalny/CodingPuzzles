@@ -4,7 +4,7 @@ If you were only permitted to complete at most one transaction (i.e., buy one an
 design an algorithm to find the maximum profit.
 Note that you cannot sell a stock before you buy one.
 '''
-from typing import List
+from leetcode import *
 
 # Time: O(n), Space: O(1).
 def max_profit(prices: List[int]) -> int:

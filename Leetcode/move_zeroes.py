@@ -1,4 +1,4 @@
-from typing import List
+from leetcode import *
 
 def move_zeroes(nums: List[int]) -> None:
     nums_len = len(nums)
