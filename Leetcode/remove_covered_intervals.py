@@ -10,6 +10,7 @@ Assume there is at least one interval given.
 from leetcode import *
 
 # Time: O(n*log(n))
+# Space: Depends on sorting algorithm used but if an inplace one is used then it'll be O(1).
 def remove_covered_intervals(intervals: List[List[int]]) -> int:
     # sort by the start ascending and then by the end descending
     intervals.sort(key=lambda x: (x[0], -x[1]))
