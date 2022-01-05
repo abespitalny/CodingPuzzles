@@ -44,6 +44,7 @@ def swap(arr: List[int], i: int, j: int) -> None:
     arr[j] = temp
     return
 
+
 nums = [1,2,3]
 next_permutation(nums)
 # Expected: [1,3,2]
