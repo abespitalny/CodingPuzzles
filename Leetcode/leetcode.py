@@ -68,3 +68,10 @@ def construct_linked_list_array(arr: List[Any]) -> ListNode:
         ptr.next = ListNode(arr[i])
         ptr = ptr.next
     return head
+
+def print_linked_list(head: ListNode) -> None:
+    ptr = head
+    while ptr != None:
+        print(ptr.val, end=' ')
+        ptr = ptr.next
+    print()
