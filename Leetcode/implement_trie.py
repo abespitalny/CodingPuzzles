@@ -48,11 +48,11 @@ class Trie:
 trie = Trie()
 trie.insert("apple")
 # Expected: True
-print(trie.search("apple"))
+trie.search("apple")
 # Expected: False
-print(trie.search("app"))
+trie.search("app")
 # Expected: True
-print(trie.startsWith("app"))
+trie.startsWith("app")
 trie.insert("app")
 # Expected: True
-print(trie.search("app"))
+trie.search("app")
