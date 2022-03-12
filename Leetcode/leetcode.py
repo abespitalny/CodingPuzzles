@@ -58,15 +58,22 @@ def construct_bin_tree_bfs_array(arr: List[Any]) -> TreeNode:
             pos += 1
     return root
 
-def construct_linked_list_array(arr: List[Any]) -> ListNode:
+# To create a cycle, pos is used to denote the index of the node that tail's next pointer is connected to.
+def construct_linked_list_array(arr: List[Any], pos = -1) -> ListNode:
     if len(arr) == 0:
         return None
 
     head = ListNode(arr[0])
     ptr = head
+    cyclePtr = head if (pos == 0) else None
     for i in range(1, len(arr)):
         ptr.next = ListNode(arr[i])
         ptr = ptr.next
+
+        if pos == i:
+            cyclePtr = ptr
+
+    ptr.next = cyclePtr
     return head
 
 def print_linked_list(head: ListNode) -> None:
