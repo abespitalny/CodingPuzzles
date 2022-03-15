@@ -15,6 +15,8 @@ class ListNode:
     def __init__(self, val=0, next=None):
         self.val = val
         self.next = next
+    def __str__(self):
+        return str(self.val)
 
 def print_bin_tree_bfs(root: TreeNode) -> None:
     queue = deque([root])
