@@ -3,6 +3,7 @@ from collections import deque, Counter
 import threading
 import math
 import random
+import heapq
 
 class TreeNode:
     def __init__(self, val=0, left=None, right=None):
