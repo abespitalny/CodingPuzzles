@@ -18,7 +18,7 @@ class Solution:
         def dfs(s):
             if s in self.memo:
                 return self.memo[s]
-            print(s)
+
             ret = False
             prefix = s[0]
             for i in range(1, len(s)):
