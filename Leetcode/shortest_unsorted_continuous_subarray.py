@@ -32,35 +32,6 @@ class Solution:
         if leftIdx > rightIdx:
             return 0
         return (rightIdx - leftIdx + 1)
-        
-    def findUnsortedSubarray(self, nums: List[int]) -> int:
-        minRight = [0]*len(nums)
-        minRight[-1] = nums[-1]
-        for i in reversed(range(len(nums) - 1)):
-            minRight[i] = min(minRight[i + 1], nums[i])
-        
-        maxLeft = [0]*len(nums)
-        maxLeft[0] = nums[0]
-        for i in range(1, len(nums)):
-            maxLeft[i] = max(maxLeft[i - 1], nums[i])
-
-        leftIdx = 0
-        for i in range(len(nums)):
-            if nums[i] <= minRight[i]:
-                leftIdx += 1
-            else:
-                break
-
-        rightIdx = len(nums) - 1
-        for i in reversed(range(len(nums))):
-            if nums[i] >= maxLeft[i]:
-                rightIdx -= 1
-            else:
-                break
-
-        if leftIdx > rightIdx:
-            return 0
-        return (rightIdx - leftIdx + 1)
     
     # Time: O(n).
     # Space: O(1).
