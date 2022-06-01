@@ -23,13 +23,11 @@ class Solution:
         if node is None:
             return None
         
-        visited = set()
         stack = [node]
         cloneNodesMap = {}
 
         while len(stack) != 0:
             originalNode = stack.pop()
-            visited.add(originalNode)
             
             if originalNode not in cloneNodesMap:
                 cloneNode = Node(originalNode.val)
@@ -42,15 +40,13 @@ class Solution:
                 if i not in cloneNodesMap:
                     cloneNeighbor = Node(i.val)
                     cloneNodesMap[i] = cloneNeighbor
+                    stack.append(i)
                 else:
                     cloneNeighbor = cloneNodesMap[i]
                 cloneNeighbors.append(cloneNeighbor)
 
-                if i not in visited:
-                    stack.append(i)
-
             cloneNode.neighbors = cloneNeighbors
-
+        
         return cloneNodesMap[node]
 
 # What follows is for testing purposes only!
