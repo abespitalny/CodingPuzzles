@@ -50,12 +50,47 @@ def search(nums: List[int], target: int) -> int:
             start = mid + 1
     return -1
 
+# A greatly simplified approach inspired by Leetcode.
+def search2(nums: List[int], target: int) -> int:
+    start = 0
+    end = len(nums) - 1
+    while start <= end:
+        mid = (start + end) // 2
+        if nums[mid] == target:
+            return mid
+        elif nums[mid] < target:
+            if nums[start] <= nums[mid] or target <= nums[end]:
+                start = mid + 1
+            else:
+                end = mid - 1
+        else:
+            if nums[start] > nums[mid] or target >= nums[start]:
+                end = mid - 1
+            else:
+                start = mid + 1
+
+    return -1
 
 print(search([4, 5, 6, 7, 0, 1, 2], 0))
+print(search2([4, 5, 6, 7, 0, 1, 2], 0))
+
 print(search([4, 5, 6, 7, 0, 1, 2], 3))
+print(search2([4, 5, 6, 7, 0, 1, 2], 3))
+
 print(search([1, 2, 4, 5, 6, 7, 0], 0))
+print(search2([1, 2, 4, 5, 6, 7, 0], 0))
+
 print(search([0, 1, 2, 4, 5, 6, 7], 0))
+print(search2([0, 1, 2, 4, 5, 6, 7], 0))
+
 print(search([6, 7, 0, 1, 2, 4, 5], 0))
-print(search([3, 1], 2))
+print(search2([6, 7, 0, 1, 2, 4, 5], 0))
+
+print(search([3, 1], 1))
+print(search2([3, 1], 1))
+
 print(search([1], 1))
+print(search2([1], 1))
+
 print(search([], 1))
+print(search2([], 1))
