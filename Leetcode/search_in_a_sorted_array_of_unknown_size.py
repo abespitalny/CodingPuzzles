@@ -46,12 +46,38 @@ class Solution:
                 return mid
         return -1
 
+    # Time: O(log(T)) where T is the target.
+    # Space: O(1)
+    def search2(self, reader: 'ArrayReader', target: int) -> int:
+        left = 0
+        right = 1
+        MAX_INT = (1 << 31) - 1
+
+        while reader.get(right) < target:
+            left = right
+            right *= 2
+
+        while left <= right:
+            mid = left + ((right - left) // 2)
+
+            midVal = reader.get(mid)
+            if midVal == target:
+                return mid
+            elif midVal < target:
+                left = mid + 1
+            else:
+                right = mid - 1
+        return -1
+
+
 secret = ArrayReader([-1,0,3,5,9,12])
 
 solution = Solution()
 
 # Expected: 4
 print(solution.search(secret, 9))
+print(solution.search2(secret, 9))
 
 # Expected: -1
 print(solution.search(secret, 2))
+print(solution.search2(secret, 2))
