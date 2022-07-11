@@ -32,6 +32,29 @@ def lengthOfLongestSubstring(s: str) -> int:
         max_run = run
     return max_run
 
+
+# Same solution as above but being written 2 years later :)
+class Solution:
+    def lengthOfLongestSubstring(self, s: str) -> int:
+        seen = {}
+        left = right = longest = 0
+
+        for i in range(len(s)):
+            letter = s[i]
+            if letter in seen:
+                if seen[letter] >= left:
+                    left = seen[letter] + 1
+                seen[letter] = i
+            else:
+                seen[letter] = i
+            
+            right += 1
+
+            longest = max(longest, right - left)
+
+        return longest
+
+
 if __name__ == "__main__":
     print(lengthOfLongestSubstring("abcabcbb"))
     print(lengthOfLongestSubstring("bbbbb"))
