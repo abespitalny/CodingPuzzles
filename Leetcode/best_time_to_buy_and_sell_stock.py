@@ -24,6 +24,19 @@ def max_profit(prices: List[int]) -> int:
                 best_profit = profit
     return best_profit
 
+# Alternative solution which makes use of Kadane's algorithm
+def max_profit2(prices: List[int]) -> int:
+    n = len(prices)
+    if n < 2:
+        return 0
+
+    best = 0
+    balance = -prices[0]
+    for i in range(1, n):
+        balance = max(balance, -prices[i])
+        best = max(best, prices[i] + balance)
+    return best
+
 
 print(max_profit([7, 1, 5, 3, 6, 4]))
 print(max_profit([7, 6, 4, 3, 1]))
