@@ -11,6 +11,9 @@ Return the minimum effort required to travel from the top-left cell to the botto
 from leetcode import *
 
 class Solution:
+    # BFS with some optimization. Don't know how this didn't exceed time limit because it's exponential.
+    # Time: O(3^(m*n))
+    # Space: O(m*n)
     def minimumEffortPath(self, heights: List[List[int]]) -> int:
         m = len(heights)
         n = len(heights[0])
