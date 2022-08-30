@@ -1,0 +1,8 @@
+ID,Name,Types,Weaknesses,Evolution
+006,NexEvolution06,Fire,"Ground,Rock,Water",
+003,NexEvolution03,Fire,"Ground,Rock,Water",005
+002,NexEvolution02,Fire,"Ground,Rock,Water",004
+007,NexEvolution07,Fire,"Ground,Rock,Water",
+004,NexEvolution04,Fire,"Ground,Rock,Water",
+001,BasicTest,Fire,"Ground,Rock,Water","002,003,007"
+005,NexEvolution05,Fire,"Ground,Rock,Water",006

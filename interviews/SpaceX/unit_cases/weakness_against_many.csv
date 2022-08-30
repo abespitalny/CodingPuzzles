@@ -1,0 +1,8 @@
+ID,Name,Types,Weaknesses,Evolution
+004,Hyemite,"Fire","Ground,Rock,Water",005
+005,Rhinopod,"Fire","Ground,Rock,Water",006
+006,Scorpotto,"Fire,Flying","Rock,Electric,Water",
+043,Pengyss,"Grass,Poison","Fire,Flying,Ice,Psychic",044
+044,Sheltopus,"Grass,Poison","Fire,Flying,Ice,Psychic","045,182"
+045,Golekey,"Grass,Poison","Fire,Flying,Ice,Psychic",
+182,Huntamel,Grass,"Bug,Fire,Flying,Ice,Poison",

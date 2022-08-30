@@ -1,0 +1,8 @@
+ID,Name,Types,Weaknesses,Evolution
+004,Iroster,"Fire","Ground,Rock,Water",005
+005,Rhinostar,"Fire","Ground,Rock,Water",006
+006,Manatric,"Fire,Flying","Rock,Electric,Water",
+043,Bisyss,"Grass,Poison","Fire,Flying,Ice,Psychic",044
+044,Earthodo,"Grass,Poison","Fire,Flying,Ice,Psychic","045,182"
+045,Jollygator,"Grass,Poison","Fire,Flying,Ice,Psychic",
+182,Tortoros,Grass,"Bug,Fire,Flying,Ice,Poison",
